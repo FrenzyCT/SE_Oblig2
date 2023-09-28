@@ -1,9 +1,11 @@
 
 def calculate_if_leap_year(leapyear):
-    if leapyear % 4 == 0 and leapyear % 100 != 0:
+    if leapyear % 400 == 0:
         return True
-    elif leapyear % 400 == 0:
-        return True
+    elif leapyear % 4 == 0:
+        if leapyear % 100 != 0:
+            return True
+        #return True
     return False
 
 
