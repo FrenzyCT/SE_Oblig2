@@ -1,12 +1,13 @@
 [tool.poetry]
-name = "poetry init"
-version = "poetry add pytest"
+name = "se-oblig2"
+version = "0.1.0"
 description = ""
-authors = ["FrenzyCT <111730227+FrenzyCT@users.noreply.github.com>"]
+authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+SE = "^2.3"
 
 
 [build-system]
