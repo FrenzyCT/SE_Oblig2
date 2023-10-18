@@ -1,4 +1,4 @@
-name: run-tests
+name: Run-tests
 on:
   push:
     branches:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   tests:
-    name: Run tests
+    name: Run-tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout and setup
@@ -22,5 +22,5 @@ jobs:
         run: pipx install poetry
       - name: Install dependencies
         run: poetry install
-      - name: Run tests
+      - name: Run-tests
         run: poetry run pytest -r w
