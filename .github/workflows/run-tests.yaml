@@ -8,10 +8,9 @@
        - master
 
 jobs:
-  tests:
-    name: Run tests
-    runs-on: ubuntu-latest
+  tests_run:
     steps:
+      - runs-on: ubuntu-latest
       - name: Checkout and setup
         uses: actions/checkout@v3
       - name: Setup Python
