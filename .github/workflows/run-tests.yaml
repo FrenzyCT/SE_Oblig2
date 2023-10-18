@@ -2,10 +2,10 @@ name: Run-tests-leap-year
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   tests:
@@ -23,4 +23,4 @@ jobs:
       - name: Install dependencies
         run: poetry install
       - name: Run tests
-        run: poetry run pytest -r w
+        run: poetry run unittest -r w
