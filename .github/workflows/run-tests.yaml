@@ -23,4 +23,7 @@ jobs:
       - name: Install dependencies
         run: poetry install
       - name: Run tests
-        run: poetry run pytest -r w
+        run: |
+          pip install pytest       
+          pytest
+          poetry run pytest -r w
