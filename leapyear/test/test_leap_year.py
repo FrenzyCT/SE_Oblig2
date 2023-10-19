@@ -15,7 +15,7 @@ class TestLeapYear():
 
     def test_divide_by_4_and_100_but_not_400_is_not_a_leap_year(self):
         year = 1700
-        assert(calculate_if_leap_year(year))
+        assert not calculate_if_leap_year(year)
 
     def test_divided_by_400_is_leap_year(self):
         year = 1200
@@ -23,7 +23,7 @@ class TestLeapYear():
 
     def test_divided_by_400_is_NOT_leap_year(self):
         year = 1700
-        assert(calculate_if_leap_year(year))
+        assert not calculate_if_leap_year(year)
 
 
 
